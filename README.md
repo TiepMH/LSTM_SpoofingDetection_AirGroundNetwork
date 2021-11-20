@@ -25,10 +25,10 @@ and the last number (15) is the number of receive antennas (or the number of fea
 ## Goals
 - Train an LSTM autoencoder in order for it to learn the `H0` data samples.
 - Once the LSTM autoencoder has been trained, it can capture the most significant characteristics of the `H0`-normal data.
-- Test whether the testing datasets contain ``H1`-abnormal data samples that are associated with spoofing attacks.
+- Test whether the testing datasets contain `H1`-abnormal data samples that are associated with spoofing attacks.
 - A detection rule relies on contrasting the output and the input of the LSTM autoencoder. 
 Imagine that if the input is a `H0`-normal data sample, then the output should look similar to the input. In this case, the difference between the input and the output is insignificant.
 On the other hand, if the input is a `H1`-abnormal data sample, then there is a big difference between the input and the output, because the trained LSTM autoencoder is meant to learn normal data samples.
 
-## Note
+## Results
 - Some results are stored in the folder `saved_figs`.
