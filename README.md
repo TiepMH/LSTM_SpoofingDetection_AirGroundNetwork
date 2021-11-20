@@ -20,7 +20,7 @@ where the first number (82) is the length of a time-series data sample,
 the second number (15) is the number of previous time slots that we want to look back for learning-from-the-past purposes,
 and the last number (15) is the number of receive antennas (or the number of features).
 - The following figure illustrates 2 time-series data samples, corresponding to `H0` and `H1`, respectively.
-<img src="https://github.com/TiepMH/LSTM_SpoofingDetection_AirGroundNetwork/blob/main/saved_figs/Data_on_antenna_ell.png" width="50%" height="50%">
+<img src="https://github.com/TiepMH/LSTM_SpoofingDetection_AirGroundNetwork/blob/main/saved_figs/Illustration.png" width="50%" height="50%">
   
 ## Goals
 - Train an LSTM autoencoder in order for it to learn the `H0` data samples.
@@ -29,3 +29,6 @@ and the last number (15) is the number of receive antennas (or the number of fea
 - A detection rule relies on contrasting the output and the input of the LSTM autoencoder. 
 Imagine that if the input is a `H0`-normal data sample, then the output should look similar to the input. In this case, the difference between the input and the output is insignificant.
 On the other hand, if the input is a `H1`-abnormal data sample, then there is a big difference between the input and the output, because the trained LSTM autoencoder is meant to learn normal data samples.
+
+## Note
+- Some results are stored in the folder `saved_figs`.
